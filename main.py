@@ -26,23 +26,23 @@ delay = 0.05
 
 def paddle1_up():
 
-    if paddle1.ycor() < 230:
-        paddle1.forward(20)
+    if paddle1.ycor() < 250 - (20 * 0.03/delay):
+        paddle1.forward(20 * 0.03/delay)
 
 def paddle1_down():
 
-    if paddle1.ycor() > -230:
-        paddle1.backward(20)
+    if paddle1.ycor() > -250 + (20 * 0.03/delay):
+        paddle1.backward(20 * 0.03/delay)
 
 def paddle2_up():
 
-    if paddle2.ycor() < 230:
-        paddle2.forward(20)
+    if paddle2.ycor() < 250 - (20 * 0.03/delay):
+        paddle2.forward(20 * 0.03/delay)
 
 def paddle2_down():
 
-    if paddle2.ycor() > -230:
-        paddle2.backward(20)
+    if paddle2.ycor() > -250 + (20 * 0.03/delay):
+        paddle2.backward(20 * 0.03/delay)
 
 screen.listen()
 
